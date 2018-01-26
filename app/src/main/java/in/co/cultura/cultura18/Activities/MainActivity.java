@@ -77,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         switch (getAdapterPosition()) {
+                            case 3:
+                                startActivity(new Intent(context, Location.class));
+                                break;
                             case 4:
                                 startActivity(new Intent(context, About.class));
                                 break;
