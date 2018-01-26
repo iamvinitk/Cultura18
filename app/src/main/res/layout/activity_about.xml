@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:id="@+id/aboutmain"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:paddingTop="15dp"
-    android:background="@drawable/sch1">
-
-    <ImageView
-        android:id="@+id/about_back"
-        android:layout_width="20.0dip"
-        android:layout_height="20.0dip"
-        android:layout_marginLeft="10.0dip"
-        android:layout_marginTop="20.0dip"
-        android:src="@drawable/back" />
+    android:background="@drawable/sch1"
+    android:paddingTop="15dp">
 
     <TextView
         android:id="@+id/about_title"
@@ -21,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12.0dip"
-        android:text="About"
-        android:textColor="#ffffffff"
+        android:text="@string/about_us"
+        android:textColor="@android:color/white"
         android:textSize="25.0sp"
         android:textStyle="bold" />
 
@@ -30,241 +21,91 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/about_title"
-        android:layout_marginTop="20.0dip">
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20sp">
 
         <LinearLayout
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10.0dip">
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="fill_parent"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#55000000"
-                android:orientation="vertical"
-                android:padding="10.0dip">
+                android:layout_marginStart="15dp"
+                android:text="APP Developers"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/about_desc"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10.0dip"
-                    android:padding="10.0dip"
-                    android:text="Cultura’17 is here to entice with a plethora of enthusiasm and vibrant excitement indulging events. In its 9th edition this year, Cultura brings forth an extravagance like no other. A myriad of options to fetch one and all the opportunity to outshine the rest.The time for you to blaze into glory is here.\n\nThe time to show off your skills is here.The time to be the best you can be is here.Come. Be a part of greatness this Cultura.Be the greatness of Cultura.So come along to     \n\nCompete. Conquer. Celebrate."
-                    android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:textSize="17.0sp" />
-            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="#9E9E9E" />
 
-            <LinearLayout
-                android:layout_width="fill_parent"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20.0dip"
-                android:background="#55000000"
-                android:orientation="vertical"
-                android:padding="10.0dip">
-
-                <TextView
-                    android:id="@+id/about_appdev"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/about_desc"
-                    android:layout_gravity="center"
-                    android:text="App Developers"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:textSize="20.0sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/yoo"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/about_appdev"
-                    android:layout_marginTop="5.0dip"
-                    android:autoLink="phone"
-                    android:lineSpacingExtra="5.0dip"
-                    android:text="     Rajat Agarwal - 8105078104\n     Ron Paul Jackson - 9480404982\n     Varun Saini - 9740916825\n     Md Nihal A - 8095299733\n     Kushal I - 9972520705"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:textColorLink="#ffffd194"
-                    android:textSize="17.0sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
+                android:layout_marginStart="15dp"
+                android:text=" • Name1 - 1234567890 \n\n • Name2 - 1234567890 \n\n • Name3 - 1234567890 "
+                android:textColor="@android:color/white"
+                android:textColorLink="#2426a4"
+                android:autoLink="phone"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20.0dip"
-                android:background="#55000000"
-                android:orientation="vertical"
-                android:padding="10.0dip">
-
-                <TextView
-                    android:id="@+id/cord"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Co-Ordinators"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:textSize="20.0sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/cordName"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/cord"
-                    android:layout_marginTop="5.0dip"
-                    android:autoLink="phone"
-                    android:lineSpacingExtra="5.0dip"
-                    android:text="     Pratith Shetty - 9880935068\n     Yogesh - 8951532478\n     Prachi Shukla - 7259183568\n     Manikanta - 8892669399"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:textColorLink="#ffffd194"
-                    android:textSize="17.0sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:text="Cultura"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+             <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="#9E9E9E" />
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20.0dip"
-                android:background="#55000000"
-                android:orientation="vertical"
-                android:padding="10.0dip">
-
-                <TextView
-                    android:id="@+id/feedback"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/cordName"
-                    android:layout_gravity="center"
-                    android:text="Feedback"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:textSize="20.0sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/textSubject"
-                    android:layout_width="fill_parent"
-                    android:layout_height="40.0dip"
-                    android:layout_below="@id/feedback"
-                    android:layout_margin="10.0dip"
-                    android:background="@android:color/white"
-                    android:hint="Subject"
-                    android:padding="10.0dip"
-                    android:textColorHint="@android:color/darker_gray" />
-
-                <EditText
-                    android:id="@+id/textMessage"
-                    android:layout_width="fill_parent"
-                    android:layout_height="100.0dip"
-                    android:layout_below="@id/textSubject"
-                    android:layout_margin="10.0dip"
-                    android:background="@android:color/white"
-                    android:gravity="top"
-                    android:hint="Your message"
-                    android:inputType="textMultiLine"
-                    android:padding="10.0dip"
-                    android:scrollbars="vertical"
-                    android:textColorHint="@android:color/darker_gray" />
-
-                <Button
-                    android:id="@+id/buttonSend"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40.0dip"
-                    android:layout_below="@id/textMessage"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10.0dip"
-                    android:background="#ffffd194"
-                    android:padding="10.0dip"
-                    android:text=" SEND "
-                    android:textAllCaps="false"
-                    android:textColor="@android:color/white" />
-            </LinearLayout>
-
-            <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="fill_parent"
+                android:layout_marginStart="15dp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10.0dip"
-                android:layout_marginTop="20.0dip"
-                android:background="#55000000"
-                android:orientation="vertical"
-                android:padding="10.0dip">
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:text="Co-Ordinators"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="We Are Social"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:textSize="20.0sp"
-                    android:textStyle="bold" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="#9E9E9E" />
 
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10.0dip"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="30.0dip"
-                        app:srcCompat="@drawable/facebook" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/instagram" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30.0dip"
-                        app:srcCompat="@drawable/twitter" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20.0dip"
-                android:background="#55000000"
-                android:orientation="vertical"
-                android:padding="10.0dip">
-
-                <TextView
-                    android:id="@+id/website"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Website"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:textSize="20.0sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:autoLink="web"
-                    android:lineSpacingExtra="5.0dip"
-                    android:text="www.culturafest.org"
-                    android:textAlignment="center"
-                    android:textColorLink="#ffffd194"
-                    android:textSize="20.0dip" />
-            </LinearLayout>
+                android:layout_marginStart="15dp"
+                android:text=" • Name1 - 1234567890 \n\n • Name2 - 1234567890 \n\n • Name3 - 1234567890 "
+                android:textColor="@android:color/white"
+                android:textColorLink="#2426a4"
+                android:autoLink="phone"
+                android:textSize="20sp" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
