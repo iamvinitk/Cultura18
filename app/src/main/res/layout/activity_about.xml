@@ -214,7 +214,7 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@id/imageView"
+                        android:id="@+id/imageView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="30.0dip"
@@ -257,7 +257,6 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/website"
                     android:layout_gravity="center"
                     android:autoLink="web"
                     android:lineSpacingExtra="5.0dip"
